@@ -6,3 +6,28 @@ There are a variety of crawling methods to solve this problem, and today I'm goi
 
 *urls: https://icrawler.readthedocs.io/en/latest/builtin.html*
 
+### 1. Confirm Current Work Directory
+```python
+import os
+
+work_dir = os.getcwd()
+print(work_dir)
+```
+
+### 2. Make Data Directory
+```python
+try:
+    os.chdir(work_dir)
+    
+    # make directory by mkdir cmd
+    os.mkdir('./data')
+    
+except Exception as err:
+    # error occurs if there are already data folder exists
+    print(err)
+
+data_dir = work_dir + '/data'
+
+print(data_dir)
+```
+If there are data directory already exists, error occurs. 
