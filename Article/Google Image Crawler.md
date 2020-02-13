@@ -31,4 +31,4 @@ data_dir = work_dir + '/data'
 print(data_dir)
 ```
 If there are data directory already exists, error occurs.  
-![already exists](/Images/already exists.jpg)
+![already exists](./Images/already exists.jpg)
