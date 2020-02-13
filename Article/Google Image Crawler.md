@@ -45,6 +45,10 @@ print(data_dir)
 ![exception](./img/2-2.jpg)
 
 ### 3. Make Parent Directory
+Parent Directory means that the image's class(e.g. Flowers, Cars, Mammels, etc.)  
+In this article, I set the name as 'cars'  
+As like #2, `try - except` is included.  
+
 ```python
 try:
     os.chdir(data_dir)
