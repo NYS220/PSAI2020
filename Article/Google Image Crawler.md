@@ -22,7 +22,7 @@ print(work_dir)
 
 ### 2. Make Data Directory
 After checking the work directory, create a 'data directory' to download the images.  
-To handle the error that occurs if there are already 'data' folder exists, use 'try - except'.
+To handle the error that occurs if there are already 'data' folder exists, use `try - except`.
 
 ```python
 try:
