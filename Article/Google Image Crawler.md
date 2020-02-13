@@ -64,11 +64,11 @@ except Exception as err:
         print("Wrong Directory path!")
         print("Current Directory path: ", os.getcwd())
 ```
-**results**
-![result](./img/3-1.img)
+**results**  
+![result](./img/3-1.jpg)
 
-**If exception occurs**
-![exception](./img/3-2.img)
+**If exception occurs**  
+![exception](./img/3-2.jpg)
 
 ### 4. Input Keyword to Download
 Set a keywords.  
@@ -87,8 +87,8 @@ if "," in search_words:
 search_list = search_words.split()
 print(search_list)
 ```
-**results**
-![result](./img/4.img)
+**results**  
+![result](./img/4.jpg)
 
 ### 5. Select Parameters(Download Limits, size, etc), Download Images
 ```python
