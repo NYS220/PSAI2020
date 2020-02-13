@@ -151,7 +151,9 @@ for img_dir in search_list:
         downloader_threads = 4,
         storage = {'root_dir': parent_dir + "/" + img_dir})
     filters = dict(
-        size = size_opt)
+        size = size_opt
+        # type = photo_type
+        # license = license_opt)
     google_crawler.session.verify = False
     google_crawler.crawl(keyword = img_dir, filters = filters, max_num = max_limits, file_idx_offset = 0)
     
@@ -160,6 +162,8 @@ for img_dir in search_list:
 # restore to original directory
 os.chdir(curr_dir)
 ```
+**results**
+![result](./img/5.jpg)
 
 ### 6. Set Image Directory
 ```python
