@@ -97,7 +97,8 @@ Then, set parameters for set image filter. Filter includes type, color, size, li
 * `color` - blackandwhite, transparent, red, orange, yellow, green, blue, ...
 * `size` - large, medium, icon, or larger than a given size (e.g. >640x480), or exactly is a given size (e.g. =1024x768)
 * `license` - noncommercial, commercial, noncommercial modify, commercial modify, ...
-* `date` - pastday, pastweek, or a tuple of dates (e.g. ((2016, 1, 1), (2017, 1, 1)))
+* `date` - pastday, pastweek, or a tuple of dates (e.g. ((2016, 1, 1), (2017, 1, 1)))  
+
 For download each keywords, `for img_dir in search_list` used.  
 
 
@@ -112,6 +113,20 @@ save_dir = parent_dirname
 
 # default size
 size_opt = ">640x480"
+
+# type
+# photo_type = 'face'
+
+# date
+# date_opt = 'pastyear'
+
+# color
+# color_opt = "color"
+
+# default license
+# license_opt = 'commercial,modify'
+
+# license_opt = 'None'
 
 # create save directory
 curr_dir = os.getcwd()
