@@ -9,7 +9,7 @@ There are a variety of crawling methods to solve this problem, and today I'm goi
 The following process was carried out using the 'Jupyter Notebook'
 
 ### 1. Confirm Current Work Directory
-Before crawling images, by using 'os' library, we have to check "work directory".
+Before crawling images, by using 'os' library, we have to check 'work directory'.
 
 ```python
 import os
@@ -21,6 +21,9 @@ print(work_dir)
 ![result](./img/1.jpg)
 
 ### 2. Make Data Directory
+After checking the work directory, create a 'data directory' to download the images.  
+To handle the error that occurs if there are already 'data' folder exists, use 'try - except'.
+
 ```python
 try:
     os.chdir(work_dir)
@@ -33,7 +36,6 @@ except Exception as err:
     print(err)
 
 data_dir = work_dir + '/data'
-
 print(data_dir)
 ```
 **results**  
