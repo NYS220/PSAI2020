@@ -72,7 +72,7 @@ except Exception as err:
 
 ### 4. Input Keyword to Download
 Set a keywords.  
-Keyword's format is as like a `A, B, C, D, ...`
+Keyword's format is as like a `A, B, C, D, ...`  
 By using `search_words.replace(',', '')` and `.split()` function, keywords are separated.  
 In this article, I set the keywords as 'sedan, truck, suv'.
 
