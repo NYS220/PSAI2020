@@ -64,13 +64,19 @@ except Exception as err:
         print("Wrong Directory path!")
         print("Current Directory path: ", os.getcwd())
 ```
+**results**
+![result](./img/3-1.img)
+
+**If exception occurs**
+![exception](./img/3-2.img)
 
 ### 4. Input Keyword to Download
-### keyword: A, B, C, D, ...
-``` python
-from icrawler.builtin import GoogleImageCrawler
-import os
+Set a keywords.  
+Keyword's format is as like a `A, B, C, D, ...`
+By using `search_words.replace(',', '')` and `.split()` function, keywords are separated.  
+In this article, I set the keywords as 'sedan, truck, suv'.
 
+``` python
 # input keywords
 search_words = input("Input Keyword to Download: ")
 
@@ -81,9 +87,13 @@ if "," in search_words:
 search_list = search_words.split()
 print(search_list)
 ```
+**results**
+![result](./img/4.img)
 
 ### 5. Select Parameters(Download Limits, size, etc), Download Images
 ```python
+from icrawler.builtin import GoogleImageCrawler
+
 # input max_limits
 max_limits = int(input("Max Crawling Limit: "))
 
