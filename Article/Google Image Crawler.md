@@ -126,8 +126,6 @@ size_opt = ">640x480"
 # default license
 # license_opt = 'commercial,modify'
 
-# license_opt = 'None'
-
 # create save directory
 curr_dir = os.getcwd()
 
