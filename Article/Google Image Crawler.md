@@ -91,6 +91,16 @@ print(search_list)
 ![result](./img/4.jpg)
 
 ### 5. Select Parameters(Download Limits, size, etc), Download Images
+Imports `GoogleImageCrawler` from `icrawler.builtin` library.  
+Then, set parameters for set image filter. Filter includes type, color, size, license, date informations.  
+* `type` - photo, face, clipart, linedrawing, animated, ...
+* `color` - blackandwhite, transparent, red, orange, yellow, green, blue, ...
+* `size` - large, medium, icon, or larger than a given size (e.g. >640x480), or exactly is a given size (e.g. =1024x768)
+* `license` - noncommercial, commercial, noncommercial modify, commercial modify, ...
+* `date` - pastday, pastweek, or a tuple of dates (e.g. ((2016, 1, 1), (2017, 1, 1)))
+For download each keywords, `for img_dir in search_list` used.  
+
+
 ```python
 from icrawler.builtin import GoogleImageCrawler
 
