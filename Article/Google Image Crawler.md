@@ -13,6 +13,7 @@ import os
 work_dir = os.getcwd()
 print(work_dir)
 ```
+**results**  
 ![result](./img/1.jpg)
 
 ### 2. Make Data Directory
@@ -31,7 +32,11 @@ data_dir = work_dir + '/data'
 
 print(data_dir)
 ```
-![2](./img/2.jpg)
+**results**  
+![result](./img/2-1.jpg)
+
+**If exception occurs**  
+![exception](./img/2-2.jpg)
 
 ### 3. Make Parent Directory
 ```python
