@@ -162,16 +162,20 @@ for img_dir in search_list:
 # restore to original directory
 os.chdir(curr_dir)
 ```
-**results**
+**results**  
 ![result](./img/5.jpg)
 
 ### 6. Set Image Directory
+Set the image directory.
 ```python
 img_dir = data_dir + '/' + parent_dirname
 print(img_dir)
 ```
 
 ### 7. Make all of the Images to jpeg format
+When training image models, errors occur if the image format is not same.
+To eliminate errors, change all the image formats to `.jpeg` format.  
+
 ```python
 from PIL import Image
 
@@ -212,6 +216,7 @@ for root, dirs, files in os.walk(img_dir):
 ```
 
 ### 8. Directory List
+Check the image directory list.
 ```python
 dir_list = os.listdir(img_dir)
 
@@ -225,6 +230,7 @@ for dirname in final_dir_list:
 ```
 
 ### 9. Check Images
+By using 'tensorflow' library, check if the images are valid and remove if it is illegal or not valid file. 
 ```python
 import tensorflow as tf
 import glob
